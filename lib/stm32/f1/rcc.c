@@ -83,9 +83,9 @@ const struct rcc_clock_scale rcc_hse_configs[RCC_CLOCK_HSE_END] = {
 		.adcpre = RCC_CFGR_ADCPRE_DIV6,
 		.flash_waitstates = 2,
 		.prediv1 = RCC_CFGR2_PREDIV_DIV2,
-		.ahb_frequency = 72e6,
-		.apb1_frequency = 36e6,
-		.apb2_frequency = 72e6,
+		.ahb_frequency = 72000000,
+		.apb1_frequency = 36000000,
+		.apb2_frequency = 72000000,
 	},
 	{
 		/* hse25 to 72, this was a f105 config originally! intention preserved */
@@ -101,9 +101,9 @@ const struct rcc_clock_scale rcc_hse_configs[RCC_CLOCK_HSE_END] = {
 		.pll2_mul = RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL8,
 		.prediv2 = RCC_CFGR2_PREDIV2_DIV5,
 		.usbpre = RCC_CFGR_USBPRE_PLL_VCO_CLK_DIV3,
-		.ahb_frequency = 72e6,
-		.apb1_frequency = 36e6,
-		.apb2_frequency = 72e6,
+		.ahb_frequency = 72000000,
+		.apb1_frequency = 36000000,
+		.apb2_frequency = 72000000,
 	},
 	{
 		/* hse8, pll to 24 (f100 value line max) */
@@ -115,9 +115,9 @@ const struct rcc_clock_scale rcc_hse_configs[RCC_CLOCK_HSE_END] = {
 		.adcpre = RCC_CFGR_ADCPRE_DIV2,
 		.flash_waitstates = 0,
 		.prediv1 = RCC_CFGR2_PREDIV_NODIV,
-		.ahb_frequency = 24e6,
-		.apb1_frequency = 24e6,
-		.apb2_frequency = 24e6,
+		.ahb_frequency = 24000000,
+		.apb1_frequency = 24000000,
+		.apb2_frequency = 24000000,
 	},
 	{
 		/* hse8, pll to 72 */
@@ -129,9 +129,9 @@ const struct rcc_clock_scale rcc_hse_configs[RCC_CLOCK_HSE_END] = {
 		.adcpre = RCC_CFGR_ADCPRE_DIV8,
 		.flash_waitstates = 2,
 		.prediv1 = RCC_CFGR2_PREDIV_NODIV,
-		.ahb_frequency = 72e6,
-		.apb1_frequency = 36e6,
-		.apb2_frequency = 72e6,
+		.ahb_frequency = 72000000,
+		.apb1_frequency = 36000000,
+		.apb2_frequency = 72000000,
 	},
 };
 
@@ -146,9 +146,9 @@ const struct rcc_clock_scale rcc_hsi_configs[RCC_CLOCK_HSI_END] = {
 		.ppre2 = RCC_CFGR_PPRE_NODIV,
 		.adcpre = RCC_CFGR_ADCPRE_DIV2,
 		.flash_waitstates = 0,
-		.ahb_frequency	= 24e6,
-		.apb1_frequency = 24e6,
-		.apb2_frequency = 24e6,
+		.ahb_frequency	= 24000000,
+		.apb1_frequency = 24000000,
+		.apb2_frequency = 24000000,
 	},
 	{
 		/* hsi to 48Mhz, allows usb, but out of spec */
@@ -161,9 +161,9 @@ const struct rcc_clock_scale rcc_hsi_configs[RCC_CLOCK_HSI_END] = {
 		.adcpre = RCC_CFGR_ADCPRE_DIV8,
 		.usbpre = RCC_CFGR_USBPRE_PLL_CLK_NODIV,
 		.flash_waitstates = 1,
-		.ahb_frequency	= 48e6,
-		.apb1_frequency = 24e6,
-		.apb2_frequency = 48e6,
+		.ahb_frequency	= 48000000,
+		.apb1_frequency = 24000000,
+		.apb2_frequency = 48000000,
 	},
 	{
 		/* hsi to 64Mhz, max possible from hsi */
@@ -175,9 +175,9 @@ const struct rcc_clock_scale rcc_hsi_configs[RCC_CLOCK_HSI_END] = {
 		.ppre2 = RCC_CFGR_PPRE_NODIV,
 		.adcpre = RCC_CFGR_ADCPRE_DIV8,
 		.flash_waitstates = 2,
-		.ahb_frequency	= 64e6,
-		.apb1_frequency = 32e6,
-		.apb2_frequency = 64e6,
+		.ahb_frequency	= 64000000,
+		.apb1_frequency = 32000000,
+		.apb2_frequency = 64000000,
 	},
 };
 
