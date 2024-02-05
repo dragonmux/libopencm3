@@ -372,7 +372,7 @@ void rcc_change_pll_divisor(uint8_t pll_div400)
 	/* Disable PLL bypass to derive the system clock from the PLL clock */
 	rcc_pll_bypass_disable();
 	/* Update the system clock frequency for housekeeping */
-	lm4f_rcc_sysclk_freq = (uint32_t)400000000 / pll_div400;
+	lm4f_rcc_sysclk_freq = 400000000U / (uint32_t)pll_div400;
 }
 
 /**
