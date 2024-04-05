@@ -70,6 +70,7 @@ libstm32_dma_csel_sources = [
 libstm32_dma2d_f47_sources = files('dma2d_common_f47.c')
 libstm32_dsi_f47_sources = files('dsi_common_f47.c')
 libstm32_exti_sources = files('exti_common_all.c')
+libstm32_fdcan_sources = files('fdcan_common.c')
 libstm32_flash_sources = files('flash_common_all.c')
 libstm32_flash_f_sources = [
 	libstm32_flash_sources,
@@ -142,5 +143,6 @@ libstm32_usart_v2_sources = [
 	libstm32_usart_sources,
 	files('usart_common_v2.c'),
 ]
+libstm32_usart_fifos_sources = files('usart_common_fifos.c')
 
 libstm32_usb_fs_sources = files('st_usbfs_core.c')
